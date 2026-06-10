@@ -4,3 +4,11 @@ __pycache__/
 data/lake/
 *.crc
 _SUCCESS
+
+# notebooks temp
+.ipynb_checkpoints/
+Untitled.ipynb
+
+# Airflow local runtime files
+airflow/airflow.db
+airflow/logs/
