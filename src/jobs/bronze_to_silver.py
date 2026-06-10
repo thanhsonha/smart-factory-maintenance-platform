@@ -47,7 +47,7 @@ def main():
             )
             .otherwise("NORMAL")
         )
-        .withColumn("siver_processed_at", current_timestamp())
+        .withColumn("silver_processed_at", current_timestamp())
     )
 
     (
