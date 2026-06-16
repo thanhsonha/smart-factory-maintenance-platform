@@ -14,3 +14,19 @@ airflow/airflow.db
 airflow/logs/
 
 
+
+# Spark / data lake outputs
+data/lake/
+**/_spark_metadata/
+**/checkpoints/
+*.crc
+*.parquet
+
+# Airflow local runtime files
+airflow/logs/
+airflow/airflow.db
+
+# Jupyter
+.ipynb_checkpoints/
+Untitled.ipynb
+*:Zone.Identifier

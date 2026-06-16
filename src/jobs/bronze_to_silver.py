@@ -16,7 +16,7 @@ def main():
 
     spark = configure_spark_with_delta_pip(builder).getOrCreate()
     
-    bronze_df = spark.read.parquet(BRONZE_PATH)
+    bronze_df = spark.read.option("recursiveFileLookup", "true").parquet(BRONZE_PATH)
 
     silver_df = (
         bronze_df
