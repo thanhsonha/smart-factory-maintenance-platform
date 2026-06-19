@@ -23,4 +23,9 @@ with DAG(
         bash_command=f"cd {PROJECT_DIR} && source .venv/bin/activate && python src/jobs/silver_to_gold.py",
     )
     
-    bronze_to_silver >> silver_to_gold
+    data_quality_check = BashOperator(
+        task_id="data_quality_check",
+        bash_command="cd /opt/airflow/project && python src/jobs/data_quality_check.py",
+    )
+    
+    bronze_to_silver >> data_quality_check >> silver_to_gold
