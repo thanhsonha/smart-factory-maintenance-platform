@@ -1,0 +1,4 @@
+machine_type,total_events,total_failures,tool_wear_failures,heat_dissipation_failures,power_failure,overstrain_failure,random_failure,failure_rate_pct,gold_processed_at
+M,456,9,0,0,9,0,1,1.97,2026-06-19 12:22:32.768635
+L,951,34,2,0,14,20,0,3.58,2026-06-19 12:22:32.768635
+H,190,2,1,0,1,0,0,1.05,2026-06-19 12:22:32.768635
